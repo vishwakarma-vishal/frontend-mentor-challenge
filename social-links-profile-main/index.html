@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      width: 320px;
+      height: auto;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .content img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 10px 0 5px 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: hsl(75, 94%, 57%);
+    }
+
+    p {
+      font-size: 14px;
+      margin: 20px 0;
+      font-weight: 400;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      width: 95%;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.8rem;
+      background-color: hsl(0, 0%, 20%);
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 321px) {
+      main {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="content">
+      <img src="assets/images/avatar-jessica.jpeg" />
+      <h1>Jessica Randall</h1>
+      <span>London, United Kingdom</span>
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+
+    <div class="button-container">
+      <button>GitHub</button>
+      <button>Frontend Mentor</button>
+      <button>LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+  </main>
+</body>
+
+</html>
