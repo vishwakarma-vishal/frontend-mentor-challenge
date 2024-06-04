@@ -1,1 +1,1 @@
-This repositories consists all the mini practice project form "https://www.frontendmentor.io/"
+This repository consists all the mini practice project from 👉 https://www.frontendmentor.io/
