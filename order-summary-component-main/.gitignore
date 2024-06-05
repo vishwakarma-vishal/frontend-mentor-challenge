@@ -15,5 +15,7 @@
 .DS_Store
 .prettierignore
 
-# Ignore this folder
-design/
+# Ignore these files
+design/desktop-preview.jpg
+design/mobile-design.jpg
+design/active-states.jpg
