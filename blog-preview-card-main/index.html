@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: 'Figtree';
+      src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Figtree';
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 384px;
+      height: auto;
+      border-radius: 20px;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 6px 6px black;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .img-box {
+      width: 100%;
+      height: 200px;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .content-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .content-box button {
+      background-color: hsl(47, 88%, 63%);
+      color: black;
+      padding: 4px 12px;
+      border-radius: 4px;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .content-box .date {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    h1:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+
+    .content-box .description {
+      font-size: 16px;
+      color: hsl(0, 0%, 50%);
+    }
+
+    .author-box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-box img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .author-box span {
+      font-size: 14px;
+      color: black;
+      font-weight: bolder;
+    }
+
+    /* for small mobile devices */
+    @media screen and (max-width: 425px) {
+      .container {
+        width: 384px;
+      }
+
+      .img-box {
+        width: 100%;
+        height: 200px;
+      }
+
+      .img-box img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .content-box button {
+        font-size: 12px;
+        font-weight: bolder;
+      }
+
+      .content-box .date {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .content-box .description {
+        font-size: 14px;
+      }
+    }
+
+    /* for extra small mobile screens */
+    @media screen and (max-width: 390px) {
+      .container {
+        width: 300px;
+      }
+
+      .img-box {
+        width: 100%;
+        height: auto;
+      }
+
+      .img-box img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="img-box">
+      <img src="./assets/images/illustration-article.svg" alt="hero image">
+    </div>
+    <div class="content-box">
+      <button>Learning</button>
+      <p class="date">Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p class="description">These languages are the backbone of every website, defining structure, content, and
+        presentation.</p>
+    </div>
+    <div class="author-box">
+      <img src="./assets/images/image-avatar.webp" alt="profile photo">
+      <span>Greg Hooper</span>
+    </div>
+
+  </main>
+</body>
+
+</html>
